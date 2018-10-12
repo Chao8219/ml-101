@@ -27,6 +27,12 @@ For this project, I created an environment called **ml-101-env**. You can create
 
 1. Use command in terminal as follow: `source anaconda3/bin/activate`
 
+### How to activate conda environment
+
+1. Activate conda
+
+2. Use command in terminal as follow: `source activate ml-101-env`
+
 ### How to create the same environment
 
 1. Activate conda
