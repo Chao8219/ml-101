@@ -22,6 +22,10 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.6 How to see the conda environment list](#26-how-to-see-the-conda-environment-list)
 
+&nbsp;&nbsp;[3 Documentation by Sphinx](#3-documentation-by-sphinx)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Install Sphinx](#31-install-sphinx)
+
 ## 1 Previous Attempts
 
 ### 1.1 Using python virtual environment
@@ -101,4 +105,22 @@ Plus, this is how you can update the conda environment.
 2. Use command in terminal as follow: `conda env list`
 
 [Back to Top](#contents)
+
+## 3 Documentation by Sphinx
+
+Since we want documentation to be neat and beautiful, we can use sphinx to generate the html. The [conda's documentation page](https://conda.io/docs/index.html) is a good example. It uses **sphinx_rtd_theme**. You can find more themed examples in sphinx website [here](http://www.sphinx-doc.org/en/master/examples.html).
+
+### 3.1 Install Sphinx
+
+1. I suggest using conda to install the package in conda environment since we are using them.
+
+2. Activate conda
+
+3. Activate conda environment
+
+4. Use command in terminal as follow: `conda install sphinx`
+
+[Back to Top](#contents)
+
+Note: The rich documentation is still under construction. Find more solution from [here](http://www.sphinx-doc.org/en/master/usage/quickstart.html).
 
