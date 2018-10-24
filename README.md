@@ -18,6 +18,10 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.4 How to exit current environment](#24-how-to-exit-current-environment)
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.5 How to export the conda environment to yml file](#25-how-to-export-the-conda-environment-to-yml-file)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.6 How to see the conda environment list](#26-how-to-see-the-conda-environment-list)
+
 ## 1 Previous Attempts
 
 ### 1.1 Using python virtual environment
@@ -76,4 +80,25 @@ For this project, I created an environment called **ml-101-env**. You can create
 
 1. Use command in terminal as follow: `source deactivate`
 
+Plus, this works for both leaving conda and conda environment.
+
 [Back to Top](#contents)
+
+### 2.5 How to export the conda environment to yml file
+
+1. Activate the conda environment you want to export first.
+
+2. Use command in terminal as follow: `conda env export > nameEnvironment.yml`, where nameEnvironment is the yml file name. In this project case, we use `conda env export > conda-environment.yml`
+
+Plus, this is how you can update the conda environment.
+
+[Back to Top](#contents)
+
+### 2.6 How to see the conda environment list
+
+1. Activate conda
+
+2. Use command in terminal as follow: `conda env list`
+
+[Back to Top](#contents)
+
