@@ -54,7 +54,7 @@ One could install conda [here](https://www.anaconda.com/). Once finished install
 
 Similar with python virtual environment, conda has its own environment. The detailed documentation could be found [conda.io](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
-For this project, I created an environment called **ml-101-env**. You can create the same environment by using the "conda-environment.yml" file.
+For this project, I created an environment called **ml-101-env**. You can create the same environment by using the "conda-env.yml" file.
 
 ### 2.1 How to activate conda
 
@@ -76,7 +76,7 @@ For this project, I created an environment called **ml-101-env**. You can create
 
 2. Git clone the repo to local, then cd to that repo directory.
 
-3. Use command in terminal as follow: `conda env create -f conda-environment.yml`
+3. Use command in terminal as follow: `conda env create -f conda-env.yml`
 
 [Back to Top](#contents)
 
@@ -92,7 +92,7 @@ Plus, this works for both leaving conda and conda environment.
 
 1. Activate the conda environment you want to export first.
 
-2. Use command in terminal as follow: `conda env export > nameEnvironment.yml`, where nameEnvironment is the yml file name. In this project case, we use `conda env export > conda-environment.yml`
+2. Use command in terminal as follow: `conda env export > nameEnvironment.yml`, where nameEnvironment is the yml file name. In this project case, we use `conda env export > conda-env.yml`
 
 Plus, this is how you can update the conda environment.
 
@@ -118,7 +118,7 @@ Since we want documentation to be neat and beautiful, we can use sphinx to gener
 
 3. Activate conda environment
 
-4. Use command in terminal as follow: `conda install sphinx`
+4. Use command in terminal as follow: `pip install sphinx`, or alternativly, `conda install sphinx` would do the job, but using conda directly may cause a problem.
 
 [Back to Top](#contents)
 

@@ -3,61 +3,39 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - alabaster=0.7.12=py_0
-  - asn1crypto=0.24.0=py36_1003
-  - babel=2.6.0=py_1
-  - certifi=2018.8.24=py36_1
-  - cffi=1.11.5=py36h5e8e0c9_1
-  - chardet=3.0.4=py36_1003
-  - cryptography=2.3.1=py36hdffb7b8_0
-  - cryptography-vectors=2.3.1=py36_1000
-  - docutils=0.14=py36_1001
-  - idna=2.7=py36_1002
-  - imagesize=1.1.0=py_0
-  - jinja2=2.10=py_1
-  - markupsafe=1.0=py36h470a237_1
-  - packaging=18.0=py_0
+  - ca-certificates=2018.10.15=ha4d7672_0
+  - certifi=2018.10.15=py36_1000
+  - libffi=3.2.1=hfc679d8_5
+  - libgcc-ng=7.2.0=hdf63c60_3
+  - libstdcxx-ng=7.2.0=hdf63c60_3
+  - ncurses=6.1=hfc679d8_1
+  - openssl=1.0.2p=h470a237_1
   - pip=18.1=py36_1000
-  - pycparser=2.19=py_0
-  - pygments=2.2.0=py_1
-  - pyopenssl=18.0.0=py36_1000
-  - pyparsing=2.2.2=py_0
-  - pysocks=1.6.8=py36_1002
-  - pytz=2018.6=py_0
-  - requests=2.20.0=py36_1000
+  - python=3.6.6=h5001a0f_3
+  - readline=7.0=haf1bffa_1
   - setuptools=39.1.0=py36_0
-  - six=1.11.0=py36_1001
-  - snowballstemmer=1.2.1=py_1
-  - sphinx=1.8.1=py36_1000
-  - sphinxcontrib-websupport=1.1.0=py_1
-  - urllib3=1.23=py36_1001
-  - ca-certificates=2018.03.07=0
-  - libedit=3.1.20170329=h6b74fdf_2
-  - libffi=3.2.1=hd88cf55_4
-  - libgcc-ng=8.2.0=hdf63c60_1
-  - libstdcxx-ng=8.2.0=hdf63c60_1
-  - ncurses=6.1=hf484d3e_0
-  - openssl=1.0.2p=h14c3975_0
-  - python=3.6.6=h6e4f718_2
-  - readline=7.0=h7b6447c_5
-  - sqlite=3.25.2=h7b6447c_0
-  - tk=8.6.8=hbc83047_0
-  - wheel=0.32.1=py36_0
-  - xz=5.2.4=h14c3975_4
-  - zlib=1.2.11=ha838bed_2
+  - sqlite=3.25.2=hb1c47c0_0
+  - tk=8.6.8=ha92aebf_0
+  - wheel=0.32.2=py36_0
+  - xz=5.2.4=h470a237_1
+  - zlib=1.2.11=h470a237_3
   - pip:
-    - absl-py==0.5.0
+    - absl-py==0.6.1
     - actionlib==1.11.13
+    - alabaster==0.7.12
     - angles==1.9.11
     - astor==0.7.1
+    - babel==2.6.0
     - bondpy==1.8.3
     - camera-calibration==1.12.23
     - camera-calibration-parsers==1.11.13
     - catkin==0.7.14
+    - chardet==3.0.4
     - cv-bridge==1.12.8
     - diagnostic-analysis==1.9.3
     - diagnostic-common-diagnostics==1.9.3
     - diagnostic-updater==1.9.3
+    - docutils==0.14
     - dynamic-reconfigure==1.5.50
     - gast==0.2.0
     - gazebo-plugins==2.5.17
@@ -68,26 +46,34 @@ dependencies:
     - genmsg==0.5.11
     - gennodejs==2.0.1
     - genpy==0.6.7
-    - grpcio==1.15.0
+    - grpcio==1.16.0
     - h5py==2.8.0
+    - idna==2.7
     - image-geometry==1.12.8
+    - imagesize==1.1.0
     - interactive-markers==1.11.4
+    - jinja2==2.10
     - keras==2.2.4
     - keras-applications==1.0.6
     - keras-preprocessing==1.0.5
     - laser-geometry==1.6.4
     - markdown==3.0.1
+    - markupsafe==1.0
     - message-filters==1.12.14
-    - numpy==1.15.2
+    - numpy==1.15.3
+    - packaging==18.0
     - pluginlib==1.11.3
     - protobuf==3.6.1
-    - pydot==1.2.4
+    - pygments==2.2.0
+    - pyparsing==2.2.2
     - python-qt-binding==0.3.4
+    - pytz==2018.6
     - pyyaml==3.13
     - qt-dotgraph==0.3.11
     - qt-gui==0.3.11
     - qt-gui-cpp==0.3.11
     - qt-gui-py-common==0.3.11
+    - requests==2.20.0
     - resource-retriever==1.12.4
     - rosbag==1.12.14
     - rosboost-cfg==1.14.4
@@ -144,9 +130,13 @@ dependencies:
     - rviz==1.12.16
     - scipy==1.1.0
     - sensor-msgs==1.12.6
+    - six==1.11.0
     - smach==2.0.1
     - smach-ros==2.0.1
     - smclib==1.8.3
+    - snowballstemmer==1.2.1
+    - sphinx==1.8.1
+    - sphinxcontrib-websupport==1.1.0
     - tensorboard==1.11.0
     - tensorflow==1.11.0
     - termcolor==1.1.0
@@ -157,7 +147,7 @@ dependencies:
     - tf2-py==0.5.18
     - tf2-ros==0.5.18
     - topic-tools==1.12.14
+    - urllib3==1.24
     - werkzeug==0.14.1
     - xacro==1.11.3
-prefix: /home/zichao/anaconda3/envs/ml-101-env
 
