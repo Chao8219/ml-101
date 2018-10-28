@@ -26,6 +26,18 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Install Sphinx](#31-install-sphinx)
 
+&nbsp;&nbsp;[4 Venv List](#4-venv-list)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Gitignore](#41-gitignore)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.2 Get the list](#42-get-the-list)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3 Install from the list](#43-install-from-the-list)
+
+&nbsp;&nbsp;[8 Package Requirement](#8-package-requirement)
+
+
+
 ## 1 Previous Attempts
 
 ### 1.1 Using python virtual environment
@@ -123,4 +135,60 @@ Since we want documentation to be neat and beautiful, we can use sphinx to gener
 [Back to Top](#contents)
 
 Note: The rich documentation is still under construction. Find more solution from [here](http://www.sphinx-doc.org/en/master/usage/quickstart.html).
+
+## 4 Venv List
+
+As is described in section 1, pushing entire venv is not practical since the packages are huge. However, by creating a venv list may solve this problem.
+
+### 4.1 Gitignore
+
+The very first thing to do is to create a gitignore list. In this case, the example is simple: we only need to ignore the entire venv directory.
+
+Step 1, by using `touch .gitignore`, one could create a new gitignore file; Step 2, by adding `\venv\*` in the .gitignore file, everything should be done.
+
+[Back to Top](#contents)
+
+### 4.2 Get the list
+
+In an activated venv, you could output the list that you've already installed, as simple as `pip freeze > requirements.txt`
+
+[Back to Top](#contents)
+
+### 4.3 Install from the list
+
+To install all packages, you need to have a venv first.
+
+1. Create an empty, new venv by using `python -m venv nameVenv`. In this case, nameVenv is venv.
+
+2. Activate the venv by using `source venv/bin/activate`. **DO NOT** do this inside Conda environment please, it would make things complicated.
+
+3. Keep your pip up-to-date, by using `pip install pip --upgrade`
+
+4. Use `pip install -r requirements.txt` to install all packages that've aleady in the list. 
+
+[Back to Top](#contents)
+
+## 8 Package Requirement
+
+If you want to re-setup mannually, here is a list of pacakges you need to install:
+
+1. `pip install pip --upgrade`
+
+2. `pip install tensorflow`
+
+3. `pip install keras`
+
+4. `pip install -U Sphinx`
+
+5. `pip install jupyter`
+
+6. `pip install pandas`
+
+7. `pip install -U matplotlib`
+
+8. `pip install seaborn`
+
+9. `pip install xlrd`
+
+[Back to Top](#contents)
 
