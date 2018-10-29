@@ -174,21 +174,7 @@ If you want to re-setup mannually, here is a list of pacakges you need to instal
 
 1. `pip install pip --upgrade`
 
-2. `pip install tensorflow`
-
-3. `pip install keras`
-
-4. `pip install -U Sphinx`
-
-5. `pip install jupyter`
-
-6. `pip install pandas`
-
-7. `pip install -U matplotlib`
-
-8. `pip install seaborn`
-
-9. `pip install xlrd`
+2. `pip install tensorflow; pip install keras; pip install -U Sphinx; pip install jupyter; pip install pandas; pip install seaborn; pip install xlrd`
 
 [Back to Top](#contents)
 
