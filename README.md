@@ -36,6 +36,9 @@
 
 &nbsp;&nbsp;[8 Package Requirement](#8-package-requirement)
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.1 Use pip in venv](#81-use-pip-in-venv)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.2 Use conda in conda env](#82-use-conda-in-conda-env)
 
 
 ## 1 Previous Attempts
@@ -170,11 +173,28 @@ To install all packages, you need to have a venv first.
 
 ## 8 Package Requirement
 
+### 8.1 Use pip in venv
+
 If you want to re-setup mannually, here is a list of pacakges you need to install:
 
 1. `pip install pip --upgrade`
 
 2. `pip install tensorflow; pip install keras; pip install -U Sphinx; pip install jupyter; pip install pandas; pip install seaborn; pip install xlrd`
+
+[Back to Top](#contents)
+
+### 8.2 Use conda in conda env
+
+The reason why I don't want to use pip inside conda environment is that, using pip may install pacakges for both inside and outside of current conda environment, which is not how we wanted.
+
+Therefore, please try to use conda command as follow:
+
+Step 1: `conda install setuptools=39.1.0`, this is because tensorflow of current version only supports 39.1.0 or below.
+
+Step 2: use conda install to install all packages:
+```
+conda install tensorflow keras sphinx jupyter pandas seaborn xlrd
+```
 
 [Back to Top](#contents)
 
