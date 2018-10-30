@@ -111,6 +111,8 @@ Plus, this works for both leaving conda and conda environment.
 
 Plus, this is how you can update the conda environment.
 
+3. To obtain no-builds list, one could use `conda env export --no-builds > conda-no-builds-env.yml`. The no-builds list is for cross-platform.
+
 [Back to Top](#contents)
 
 ### 2.6 How to see the conda environment list
@@ -189,7 +191,7 @@ The reason why I don't want to use pip inside conda environment is that, using p
 
 Therefore, please try to use conda command as follow:
 
-Step 1: `conda install setuptools=39.1.0`, this is because tensorflow of current version only supports 39.1.0 or below.
+Step 1: `conda install setuptools=39.0.1`, this is because tensorflow of current version only supports 39.1.0 or below.
 
 Step 2: use conda install to install all packages:
 ```
