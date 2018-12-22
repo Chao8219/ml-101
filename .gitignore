@@ -1,5 +1,9 @@
 # ignore venv directory
 # which is the virtual environment
 /venv/*
+
 # ignore the jupyter notebook check points
 /.ipynb_checkpoints/*
+
+# ignore vscode setting folder
+/.vscode/*
