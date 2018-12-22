@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2 Using Conda Environment &mdash; ml-101  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3 Documentation by Sphinx" href="documentation-by-sphinx.html" />
+    <link rel="prev" title="1 Previous Attempts" href="previous-attempts.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ml-101
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="previous-attempts.html">1 Previous Attempts</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2 Using Conda Environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-activate-conda">2.1 How to activate conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-activate-conda-environment">2.2 How to activate conda environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-create-the-same-environment">2.3 How to create the same environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-exit-current-environment">2.4 How to exit current environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-export-the-conda-environment-to-yml-file">2.5 How to export the conda environment to yml file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-see-the-conda-environment-list">2.6 How to see the conda environment list</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation-by-sphinx.html">3 Documentation by Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="venv-list.html">4 Venv List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="package-requirement.html">8 Package Requirement</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ml-101</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>2 Using Conda Environment</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/Chao8219/ml-101/blob/master/docs/using-conda-environment.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-conda-environment">
+<h1>2 Using Conda Environment<a class="headerlink" href="#using-conda-environment" title="Permalink to this headline">¶</a></h1>
+<p>This doc is for Ubuntu/Linux only, for now.</p>
+<p>One could install conda <a class="reference external" href="https://www.anaconda.com/">here</a>.
+Once finished installation, you can edit .bashrc file in your home
+directory, and comment out “source” line that added by the Anaconda
+installer so that you won’t mess up anaconda python and OS python.
+See below section to check how to activate conda.</p>
+<p>Similar with python virtual environment, conda has its own
+environment. The detailed documentation could be found
+<a class="reference external" href="https://conda.io/docs/user-guide/tasks/manage-environments.html">conda.io</a>.</p>
+<p>For this project, I created an environment called <strong>ml-101-env</strong>.
+You can create the same environment by using the “conda-env.yml” file.</p>
+<div class="section" id="how-to-activate-conda">
+<h2>2.1 How to activate conda<a class="headerlink" href="#how-to-activate-conda" title="Permalink to this headline">¶</a></h2>
+<p>1. Use command in terminal as follow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">anaconda3</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-to-activate-conda-environment">
+<h2>2.2 How to activate conda environment<a class="headerlink" href="#how-to-activate-conda-environment" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Activate conda</li>
+</ol>
+<p>2. Use command in terminal as follow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">activate</span> <span class="n">ml</span><span class="o">-</span><span class="mi">101</span><span class="o">-</span><span class="n">env</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-to-create-the-same-environment">
+<h2>2.3 How to create the same environment<a class="headerlink" href="#how-to-create-the-same-environment" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Activate conda</li>
+<li>Git clone the repo to local, then cd to that repo directory.</li>
+</ol>
+<p>3. Use command in terminal as follow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">conda</span><span class="o">-</span><span class="n">env</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-to-exit-current-environment">
+<h2>2.4 How to exit current environment<a class="headerlink" href="#how-to-exit-current-environment" title="Permalink to this headline">¶</a></h2>
+<p>1. Use command in terminal as follow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">deactivate</span>
+</pre></div>
+</div>
+<p>Plus, this works for both leaving conda and conda environment.</p>
+</div>
+<div class="section" id="how-to-export-the-conda-environment-to-yml-file">
+<h2>2.5 How to export the conda environment to yml file<a class="headerlink" href="#how-to-export-the-conda-environment-to-yml-file" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Activate the conda environment you want to export first.</li>
+</ol>
+<p>2. Use command in terminal as follow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">export</span> <span class="o">&gt;</span> <span class="n">nameEnvironment</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>where nameEnvironment is the yml file name.
+In this project case, we use</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">export</span> <span class="o">&gt;</span> <span class="n">conda</span><span class="o">-</span><span class="n">env</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>Plus, this is how you can update the conda environment.</p>
+<p>3. To obtain no-builds list, one could use</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">export</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">builds</span> <span class="o">&gt;</span> <span class="n">conda</span><span class="o">-</span><span class="n">no</span><span class="o">-</span><span class="n">builds</span><span class="o">-</span><span class="n">env</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>The no-builds list is for cross-platform.</p>
+</div>
+<div class="section" id="how-to-see-the-conda-environment-list">
+<h2>2.6 How to see the conda environment list<a class="headerlink" href="#how-to-see-the-conda-environment-list" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Activate conda</li>
+</ol>
+<p>2. Use command in terminal as follow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="nb">list</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="documentation-by-sphinx.html" class="btn btn-neutral float-right" title="3 Documentation by Sphinx" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="previous-attempts.html" class="btn btn-neutral" title="1 Previous Attempts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Zichao Hou
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
