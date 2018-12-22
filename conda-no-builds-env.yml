@@ -12,10 +12,10 @@ dependencies:
   - blas=1.0
   - bleach=3.0.2
   - ca-certificates=2018.03.07
-  - certifi=2018.10.15
+  - certifi=2018.11.29
   - cffi=1.11.5
   - chardet=3.0.4
-  - cryptography=2.3.1
+  - cryptography=2.4.2
   - cycler=0.10.0
   - dbus=1.13.2
   - decorator=4.3.0
@@ -77,7 +77,7 @@ dependencies:
   - notebook=5.7.0
   - numpy=1.15.3
   - numpy-base=1.15.3
-  - openssl=1.0.2p
+  - openssl=1.1.1a
   - packaging=18.0
   - pandas=0.23.4
   - pandoc=2.2.3.2
@@ -98,12 +98,12 @@ dependencies:
   - pyparsing=2.2.2
   - pyqt=5.9.2
   - pysocks=1.6.8
-  - python=3.6.6
+  - python=3.6.7
   - python-dateutil=2.7.3
   - pytz=2018.5
   - pyyaml=3.13
   - pyzmq=17.1.2
-  - qt=5.9.6
+  - qt=5.9.7
   - qtconsole=4.4.2
   - readline=7.0
   - requests=2.19.1
@@ -116,9 +116,10 @@ dependencies:
   - six=1.11.0
   - snowballstemmer=1.2.1
   - sphinx=1.8.1
+  - sphinx_rtd_theme=0.4.2
   - sphinxcontrib=1.0
   - sphinxcontrib-websupport=1.1.0
-  - sqlite=3.25.2
+  - sqlite=3.26.0
   - statsmodels=0.9.0
   - tensorboard=1.11.0
   - tensorflow=1.11.0
@@ -140,4 +141,5 @@ dependencies:
   - yaml=0.1.7
   - zeromq=4.2.5
   - zlib=1.2.11
+prefix: /home/chao/anaconda3/envs/ml-101-env
 

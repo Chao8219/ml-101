@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1 Previous Attempts &mdash; ml-101  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2 Using Conda Environment" href="using-conda-environment.html" />
+    <link rel="prev" title="Welcome to ml-101’s documentation!" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ml-101
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1 Previous Attempts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-python-virtual-environment">1.1 Using python virtual environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-github-large-file-storage">1.2 Using github large file storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#another-new-attempt-that-may-work">1.3 Another new attempt that may work</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="using-conda-environment.html">2 Using Conda Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation-by-sphinx.html">3 Documentation by Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="venv-list.html">4 Venv List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="package-requirement.html">8 Package Requirement</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ml-101</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>1 Previous Attempts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/Chao8219/ml-101/blob/master/docs/previous-attempts.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="previous-attempts">
+<h1>1 Previous Attempts<a class="headerlink" href="#previous-attempts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="using-python-virtual-environment">
+<h2>1.1 Using python virtual environment<a class="headerlink" href="#using-python-virtual-environment" title="Permalink to this headline">¶</a></h2>
+<p>Python virtual environment is neat. You can install all packages you
+need inside the virtual environment without affecting outside world.
+But once you have the venv in the repo, you may find out the total
+size of the venv folder is way too large. The github won’t accept it.</p>
+</div>
+<div class="section" id="using-github-large-file-storage">
+<h2>1.2 Using github large file storage<a class="headerlink" href="#using-github-large-file-storage" title="Permalink to this headline">¶</a></h2>
+<p>Naturally, if github doesn’t accept large files, you may want to use
+git lfs to track all the files. The setup is easy, but the problem is
+lfs also has a limitation of the number of files. Therefore it doesn’t
+work.</p>
+</div>
+<div class="section" id="another-new-attempt-that-may-work">
+<h2>1.3 Another new attempt that may work<a class="headerlink" href="#another-new-attempt-that-may-work" title="Permalink to this headline">¶</a></h2>
+<p>Besides uploading the whole virtual environment, you may want to
+take a detour. In python, you can write a python setup script (setup.py),
+which allows you to install all the requirement packages that you need.
+To aviod install all the packages in your computer globally, you can
+create a virtual environment locally by yourself once cloned the repo.
+Then activate it. Finally you can install all the packages (dependencies)
+in this local virtual environment.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="using-conda-environment.html" class="btn btn-neutral float-right" title="2 Using Conda Environment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to ml-101’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Zichao Hou
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
