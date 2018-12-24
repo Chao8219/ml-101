@@ -84,6 +84,9 @@
 <li class="toctree-l1"><a class="reference internal" href="using-conda-environment.html">2 Using Conda Environment</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">3 Documentation by Sphinx</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#install-sphinx">3.1 Install Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#apply-quickstart">3.2 Apply Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edit-index">3.3 Edit Index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#push-to-github-pages">3.4 Push to GitHub Pages</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="venv-list.html">4 Venv List</a></li>
@@ -177,8 +180,57 @@ since we are using them.</li>
 </pre></div>
 </div>
 <p>would do the job.</p>
-<p>Note: The rich documentation is still under construction. Find more
-solution from <a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/quickstart.html">quickstart</a>.</p>
+</div>
+<div class="section" id="apply-quickstart">
+<h2>3.2 Apply Quickstart<a class="headerlink" href="#apply-quickstart" title="Permalink to this headline">¶</a></h2>
+<p>With the installation of sphinx, you may use a default quick setup
+package called <a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/quickstart.html">quickstart</a>. Please follow instruction to use the
+quickstart to generate a basic source and build directory.</p>
+<p>Here are some tips for you:</p>
+<ol class="arabic simple">
+<li>Please make a new directory called “docs” under your root directory,
+if you still not have it, and run quickstart script inside docs to
+maintain a clean root directory.</li>
+<li>Please add “Makefile” and “make.bat” when you run the quickstart
+script, since they are useful to build html to you.</li>
+</ol>
+</div>
+<div class="section" id="edit-index">
+<h2>3.3 Edit Index<a class="headerlink" href="#edit-index" title="Permalink to this headline">¶</a></h2>
+<p>As you may notice, the html files are generate based on either markdown
+or reStructedText files. Therefore, all you need to do is to edit the
+corresponding files and then “make” them.</p>
+<p>The first step could be edit the index.rst file to give you a general
+idea about how to link all different contents. You could seperate each
+section into different rst files and use the name to link them in the
+index.rst.</p>
+<p>Please try to edit it and use command in terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+<p>To generate html file and see how it goes. I believe it would only take
+you few minutes to figure out what is going on!</p>
+</div>
+<div class="section" id="push-to-github-pages">
+<h2>3.4 Push to GitHub Pages<a class="headerlink" href="#push-to-github-pages" title="Permalink to this headline">¶</a></h2>
+<p>Once you finish your editing job, you can push it to GitHub Pages. The
+GitHub Pages is a nice service to help you to host your documentation
+online for free. The detailed introduction of GitHub Pages will be
+documented other places, let’s go back to the Sphinx.</p>
+<p>Since GitHub Pages would only read the index.html file in your root
+or your root/docs directory, you need to place a re-direct html page
+at those places.</p>
+<p>For example, in my setup, I need GitHub Pages to read my source under
+docs directory, but I do not have any index.html under that folder.
+Therefore, I can added an empty “index.html” filled with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">meta</span> <span class="n">http</span><span class="o">-</span><span class="n">equiv</span><span class="o">=</span><span class="s2">&quot;refresh&quot;</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;0; url=./_build/html/index.html&quot;</span><span class="o">/&gt;</span>
+</pre></div>
+</div>
+<p>Thus, the link will be re-directed.</p>
+<p>This solution is offered by <a class="reference external" href="https://github.com/sphinx-doc/sphinx/issues/3382#issuecomment-409068915">here</a>.</p>
+<p>Also, GitHub Pages, sometimes, is slow to response, and it may not be
+working at first few attempts. Please be patient.</p>
+<p>Note: You can find more usage on this page of <a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/quickstart.html">quickstart</a>.</p>
 </div>
 </div>
 
