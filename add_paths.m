@@ -8,7 +8,8 @@ end
 function windowsOS()
 current_path = pwd();
 paths = ...
-    ["\data"];
+    ["\data"; 
+    "\tools"];
 n = length(paths);
 for i = 1:n
    addpath((current_path+paths(i))); 
